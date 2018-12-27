@@ -1,0 +1,6 @@
+module Pods_WeexDemo {
+  umbrella header "Pods-WeexDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YYF_Frist_CTL" customModule="WeexDemo" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oiy-UJ-OfD">
+                    <rect key="frame" x="130.5" y="290.5" width="114" height="30"/>
+                    <state key="normal" title="解压本地Zip文件"/>
+                    <connections>
+                        <action selector="unzipAction:" destination="-1" eventType="touchUpInside" id="bb9-Az-BMS"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DNw-fM-7wI">
+                    <rect key="frame" x="138" y="328.5" width="99" height="30"/>
+                    <state key="normal" title="加载本地Weex"/>
+                    <connections>
+                        <action selector="loadWeexAction:" destination="-1" eventType="touchUpInside" id="Uqe-yR-xU4"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3b2-yH-asA">
+                    <rect key="frame" x="118.5" y="366.5" width="138" height="30"/>
+                    <state key="normal" title="删除本地已解压文件"/>
+                    <connections>
+                        <action selector="removeFileAction:" destination="-1" eventType="touchUpInside" id="kZO-aZ-tJ8"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="DNw-fM-7wI" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="1BG-a2-8Xa"/>
+                <constraint firstItem="oiy-UJ-OfD" firstAttribute="centerX" secondItem="DNw-fM-7wI" secondAttribute="centerX" id="3v3-gK-QQc"/>
+                <constraint firstItem="DNw-fM-7wI" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="cJJ-0f-JqH"/>
+                <constraint firstItem="DNw-fM-7wI" firstAttribute="top" secondItem="oiy-UJ-OfD" secondAttribute="bottom" constant="8" id="jie-Ro-65p"/>
+                <constraint firstItem="3b2-yH-asA" firstAttribute="top" secondItem="DNw-fM-7wI" secondAttribute="bottom" constant="8" id="p4q-3W-P3Q"/>
+                <constraint firstItem="3b2-yH-asA" firstAttribute="centerX" secondItem="DNw-fM-7wI" secondAttribute="centerX" id="ycQ-zh-tn1"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>

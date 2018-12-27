@@ -1,0 +1,22 @@
+source 'git@github.com/CocoaPods/Specs.git'
+platform :ios, '8.0'
+#inhibit_all_warnings!
+
+def common
+	pod 'WeexSDK'
+    pod 'WeexPluginLoader'
+    pod 'SDWebImage'
+    pod 'SocketRocket'
+    pod 'LEEAlert'
+    pod 'Alamofire'
+    pod 'SwiftyJSON'
+    pod 'SVProgressHUD'
+end
+
+target 'WeexDemo' do
+    common
+end
+
+target 'WeexUITestDemo' do
+    common
+end

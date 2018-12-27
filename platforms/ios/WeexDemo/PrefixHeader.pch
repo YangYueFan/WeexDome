@@ -1,0 +1,42 @@
+//
+//  PrefixHeader.pch
+//  WeexDemo
+//
+//  Created by 科技部iOS on 2018/12/19.
+//  Copyright © 2018 taobao. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+/* ********************* Weex ********************* */
+#import <WeexSDK/WeexSDK.h>
+#import <WeexSDK/WXSDKInstance.h>
+#import <WeexSDK/WXSDKEngine.h>
+#import <WeexSDK/WXUtility.h>
+#import <WeexSDK/WXDebugTool.h>
+#import <WeexSDK/WXSDKManager.h>
+
+#import "UIViewController+WXDemoNaviBar.h"
+#import "WXImgLoaderDefaultImpl.h"
+
+
+#import <SDWebImage/UIImageView+WebCache.h>
+#import <SRWebSocket.h>
+#import "WeexDemo-Swift.h"
+
+#import "YYF_Scan_Module.h"
+#import "YYF_DateTool.h"
+
+#import "SVProgressHUD.h"
+
+
+#define local_weex_URL          @"http://10.11.46.112:8081/"
+#define local_weex_home_URL     local_weex_URL@"dist/Module/HomeList.js"
+
+
+
+#endif /* PrefixHeader_pch */

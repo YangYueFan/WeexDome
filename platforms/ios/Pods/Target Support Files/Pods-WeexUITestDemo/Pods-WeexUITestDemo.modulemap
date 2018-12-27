@@ -1,0 +1,6 @@
+module Pods_WeexUITestDemo {
+  umbrella header "Pods-WeexUITestDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}

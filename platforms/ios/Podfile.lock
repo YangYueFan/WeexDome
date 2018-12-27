@@ -1,0 +1,47 @@
+PODS:
+  - Alamofire (4.8.0)
+  - LEEAlert (1.2.1)
+  - SDWebImage (3.7.5):
+    - SDWebImage/Core (= 3.7.5)
+  - SDWebImage/Core (3.7.5)
+  - SocketRocket (0.4.2)
+  - SVProgressHUD (2.2.5)
+  - SwiftyJSON (4.2.0)
+  - WeexPluginLoader (0.0.1.9.1):
+    - WeexSDK
+  - WeexSDK (0.20.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - LEEAlert
+  - SDWebImage
+  - SocketRocket
+  - SVProgressHUD
+  - SwiftyJSON
+  - WeexPluginLoader
+  - WeexSDK
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - LEEAlert
+    - SDWebImage
+    - SocketRocket
+    - SVProgressHUD
+    - SwiftyJSON
+    - WeexPluginLoader
+    - WeexSDK
+
+SPEC CHECKSUMS:
+  Alamofire: 3ec537f71edc9804815215393ae2b1a8ea33a844
+  LEEAlert: 325078be70d9234e318d69703ba2f2cd01d8974a
+  SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
+  SocketRocket: ffe08119b00ef982f6c37052a4705a057c8494ad
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
+  WeexPluginLoader: 85c1304f8ba29864e58531614a0acfeceef1b85c
+  WeexSDK: ced3f2ef2f0cb48d1d76fd2f03c645572c632d21
+
+PODFILE CHECKSUM: 033eb5f784447c053d83a8d1fed6f71416556887
+
+COCOAPODS: 1.5.3
