@@ -32,7 +32,6 @@ class YYF_Third_CTL: UIViewController ,UITableViewDelegate,UITableViewDataSource
                 self.dataArr.append(json)
             }
             self.myTableView.reloadData()
-            
         }
     }
     

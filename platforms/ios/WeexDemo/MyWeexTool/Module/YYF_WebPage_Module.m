@@ -17,6 +17,7 @@
 WX_EXPORT_METHOD(@selector(goWebPage:));
 
 -(void)goWebPage:(NSString*)url{
+    //自定义webCTL
     YYF_Web_CTL *ctl = [YYF_Web_CTL new];
     ctl.url = url;
     [self.weexInstance.viewController.navigationController pushViewController:ctl animated:true];

@@ -1,0 +1,1 @@
+../../../WeexNatCommunication/ios/Sources/WeexNatCommunication.h

@@ -1,5 +1,43 @@
 {
-  "ios": [],
+  "ios": [
+    {
+      "type": "pod",
+      "name": "WeexNatCommunication",
+      "version": "1.0.0"
+    },
+    {
+      "type": "pod",
+      "name": "WeexNatCamera",
+      "version": "1.0.0"
+    },
+    {
+      "type": "pod",
+      "name": "WeexNatMediaImage",
+      "version": "1.0.1"
+    }
+  ],
   "web": [],
-  "android": []
+  "android": [
+    {
+      "type": "maven",
+      "groupId": "com.instapp.nat",
+      "name": "weex-plugin-communication",
+      "version": "1.0.1",
+      "dependency": "com.instapp.nat:weex-plugin-communication:1.0.1"
+    },
+    {
+      "type": "maven",
+      "groupId": "com.instapp.nat",
+      "name": "weex-plugin-camera",
+      "version": "1.0.2",
+      "dependency": "com.instapp.nat:weex-plugin-camera:1.0.2"
+    },
+    {
+      "type": "maven",
+      "groupId": "com.instapp.nat",
+      "name": "weex-plugin-media-image",
+      "version": "1.0.1",
+      "dependency": "com.instapp.nat:weex-plugin-media-image:1.0.1"
+    }
+  ]
 }

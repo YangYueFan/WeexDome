@@ -1,12 +1,34 @@
 PODS:
   - Alamofire (4.8.0)
+  - DACircularProgress (2.3.1)
   - LEEAlert (1.2.1)
+  - MBProgressHUD (1.0.0)
+  - NatCamera (0.0.2)
+  - NatCommunication (0.0.2)
+  - NatImage (0.0.8):
+    - DACircularProgress (~> 2.3)
+    - MBProgressHUD (~> 1.0.0)
+    - SDWebImage (~> 3.7.5)
+    - TZImagePickerController (~> 2.1.6)
   - SDWebImage (3.7.5):
     - SDWebImage/Core (= 3.7.5)
   - SDWebImage/Core (3.7.5)
   - SocketRocket (0.4.2)
   - SVProgressHUD (2.2.5)
   - SwiftyJSON (4.2.0)
+  - TZImagePickerController (2.1.9)
+  - WeexNatCamera (1.0.0):
+    - NatCamera
+    - WeexPluginLoader
+    - WeexSDK
+  - WeexNatCommunication (1.0.0):
+    - NatCommunication
+    - WeexPluginLoader
+    - WeexSDK
+  - WeexNatMediaImage (1.0.1):
+    - NatImage
+    - WeexPluginLoader
+    - WeexSDK
   - WeexPluginLoader (0.0.1.9.1):
     - WeexSDK
   - WeexSDK (0.20.1)
@@ -18,30 +40,51 @@ DEPENDENCIES:
   - SocketRocket
   - SVProgressHUD
   - SwiftyJSON
+  - WeexNatCamera (= 1.0.0)
+  - WeexNatCommunication (= 1.0.0)
+  - WeexNatMediaImage (= 1.0.1)
   - WeexPluginLoader
   - WeexSDK
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - DACircularProgress
     - LEEAlert
+    - MBProgressHUD
+    - NatCamera
+    - NatCommunication
+    - NatImage
     - SDWebImage
     - SocketRocket
     - SVProgressHUD
     - SwiftyJSON
+    - TZImagePickerController
+    - WeexNatCamera
+    - WeexNatCommunication
+    - WeexNatMediaImage
     - WeexPluginLoader
     - WeexSDK
 
 SPEC CHECKSUMS:
   Alamofire: 3ec537f71edc9804815215393ae2b1a8ea33a844
+  DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
   LEEAlert: 325078be70d9234e318d69703ba2f2cd01d8974a
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  NatCamera: 99304f801d5c40511114a372e6c25edf3b56693e
+  NatCommunication: 0f817c81d9443a7db5dd08e6dbcab6262b4e1e35
+  NatImage: d2d8679f1a65c20aed41648bf2b4e8f141f2f58d
   SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
   SocketRocket: ffe08119b00ef982f6c37052a4705a057c8494ad
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
+  TZImagePickerController: 6c9721783063edafc9ad42cd95acc82f1b648485
+  WeexNatCamera: b491f6d72384a195589da5d07ab49af61e427c67
+  WeexNatCommunication: c311619645926ba22a88261138f0513d08291729
+  WeexNatMediaImage: 7440478660085e8d126f117b53de6297d05688fc
   WeexPluginLoader: 85c1304f8ba29864e58531614a0acfeceef1b85c
   WeexSDK: ced3f2ef2f0cb48d1d76fd2f03c645572c632d21
 
-PODFILE CHECKSUM: 033eb5f784447c053d83a8d1fed6f71416556887
+PODFILE CHECKSUM: 1f0ae8b3b93f57c447a615768bc8611e6043da49
 
 COCOAPODS: 1.5.3

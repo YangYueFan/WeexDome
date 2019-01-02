@@ -1,0 +1,1 @@
+../../../WeexNatCamera/ios/Sources/WeexNatCamera.h

@@ -29,14 +29,12 @@ import UIKit
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-    
+       
         if self.hotReloadSocket == nil {
-            let hotReloadURL = Bundle.main.object(forInfoDictionaryKey: InfoDictionaryKey ) as! String
-            
-            self.hotReloadSocket = SRWebSocket.init(url: URL.init(string: hotReloadURL)!)
+            self.render()
+            self.hotReloadSocket = SRWebSocket.init(url: URL.init(string: "ws://10.11.46.112:8080")!)
             self.hotReloadSocket?.delegate = self
             self.hotReloadSocket?.open()
-            self.render()
             
         }
         

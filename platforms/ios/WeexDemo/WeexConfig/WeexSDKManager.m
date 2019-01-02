@@ -13,6 +13,7 @@
 
 #import "WXImgLoaderDefaultImpl.h"
 #import "WXDemoViewController.h"
+#import "WXWebSocketHandler.h"
 #import "YYF_Weex_Module.h"
 
 @implementation WeexSDKManager
@@ -59,8 +60,8 @@
     [WXSDKEngine registerModule:@"camera" withClass:[YYF_CameraAlert_Module class]];
     [WXSDKEngine registerModule:@"WebPage_Module" withClass:[YYF_WebPage_Module class]];
     [WXSDKEngine registerModule:@"Location_Module" withClass:[YYF_Location_Module class]];
-    
-    
+
+ 
 #ifdef DEBUG
     [WXLog setLogLevel:WXLogLevelError];
 #endif

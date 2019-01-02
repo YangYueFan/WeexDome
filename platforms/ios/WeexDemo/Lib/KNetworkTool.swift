@@ -169,25 +169,25 @@ class KNetworkTool: NSObject {
     class func startOpenNetWorkListening(){
         
         manager?.listener = { status in
-            var title = ""
+//            var title = ""
             switch status {
             case .notReachable:
                 YYFLog("网络状态 :没有网络连接" )
-                title = "没有网络连接"
+//                title = "没有网络连接"
                 isFirstShowZAlert = false
                 break;
             case .unknown:
                 YYFLog("网络状态 :未知" )
-                title = "未知网络"
+//                title = "未知网络"
                 isFirstShowZAlert = false
                 break;
             case .reachable(.ethernetOrWiFi):
                 YYFLog("网络状态 :切换到蜂窝网络/Wifi" )
-                title = "切换到WIFI网络"
+//                title = "切换到WIFI网络"
                 break;
             case .reachable(.wwan):
                 YYFLog("网络状态 :切换到WIFI网络" )
-                title = "切换到蜂窝网络"
+//                title = "切换到蜂窝网络"
                 break;
             }
             if isFirstShowZAlert {
